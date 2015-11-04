@@ -14,5 +14,3 @@ with sqlite3.connect("new.db") as connection:
 
 	#insert data into table
 	c.executemany("INSERT INTO population VALUES(?,?,?)",cities)
-
-
