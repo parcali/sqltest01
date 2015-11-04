@@ -6,6 +6,9 @@ import sqlite3
 # create a new database if the database doesn't already exist
 conn = sqlite3.connect("new.db")
 
+# memory only database, closing connection erases database
+# conn = sqlite3.connect(":memory:")
+
 # get a cursor object used to execute SQL commands
 cursor = conn.cursor()
 
